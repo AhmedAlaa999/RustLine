@@ -2,39 +2,22 @@
 
 # RustLine
 
-*"Every second matters. Every coin counts."*
+*"Collect the coins to Save the Princess"*
 
-A retro-inspired 2D pixel platformer where you explore the remains of a forgotten industrial world, collect valuable coins, avoid deadly traps, and race against time to survive.
+A retro-inspired 2D pixel platformer where you explore the remains of a forgotten industrial world, collect valuable coins, avoid deadly traps, and race against time to survive and Save the Princess.
 
 ---
 
 </div>
 
-# 📖 Story
-
-The world has fallen into ruin.
-
-Factories that once powered civilization have been abandoned, leaving behind dangerous machinery, collapsing structures, and mysterious creatures.
-
-You are one of the last survivors exploring these forgotten lands in search of ancient coins said to unlock the path forward.
-
-But time is against you.
-
-Every level is unstable, and once the timer reaches zero, everything begins to collapse.
-
-Can you escape before it's too late?
-
----
-
 # 🎮 How to Play
 
 Your objective is simple:
 
-- 🪙 Collect enough coins to complete the level.
-- ⏱️ Beat the timer before it reaches zero.
-- ⚠️ Avoid spikes, enemies, and other hazards.
-- ❤️ Protect your health.
-- 🚪 Reach the exit to continue your journey.
+- Collect enough coins to complete the level.
+- Beat the timer before it reaches zero.
+- Avoid spikes
+- Protect your health.
 
 If your health reaches zero or time runs out before collecting enough coins, you'll lose and have to try again.
 
@@ -50,31 +33,29 @@ Every level becomes more difficult, requiring quicker decisions and better movem
 | **D** / → | Move Right |
 | **Space** | Jump |
 | **Shift** | Run |
-| **R** | Restart Level |
-| **ESC** | Return to Main Menu |
+| **R** | go to MainMenu |
 
 ---
 
 # ✨ Features
 
-- 🎨 Pixel-art graphics
-- 🎵 Original sound effects and background music
-- ⏱️ Countdown timer
-- 🪙 Coin collection system
-- ❤️ Health system
-- 👾 Enemy AI
-- ⚠️ Dangerous traps
-- 🏆 Victory and Game Over screens
-- 🎮 Smooth platforming gameplay
+- Pixel-art graphics
+- beautiful  sound effects and background music
+- Countdown timer
+- Coin collection system
+- Health system
+- Dangerous traps
+- Victory and Game Over screens
+- Smooth platforming gameplay
 
 ---
 
-# 🌍 Game Rules
+# Game Rules
 
-- You must collect the required number of coins before the timer ends.
-- Falling into traps or touching enemies will damage you.
+- You must collect the required number of coins before the timer ends that is 15 Coins.
+- Falling into traps or touching them will damage you.
 - Losing all your health ends the game.
-- Reach the goal to unlock the next challenge.
+- Collect 15 Coins before timesout to win and save the princess
 
 ---
 
@@ -85,53 +66,28 @@ Every level becomes more difficult, requiring quicker decisions and better movem
 Example:
 
 ```
-/screenshots/menu.png
-/screenshots/gameplay.png
-/screenshots/win.png
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/91cb2d87-d1b7-499d-8c44-8034c3be4c33" />
+<img width="1366" height="768" alt="{61086094-0EF9-4F1A-A301-5090C5C2A414}" src="https://github.com/user-attachments/assets/0dd90c9e-2706-4b91-bc76-26f776f7e792" />
+<img width="1366" height="768" alt="{C7852AF7-5CFB-423B-A768-25B7274E3D8D}" src="https://github.com/user-attachments/assets/118e4355-3364-4789-862f-259fc7a41a56" />
+
 ```
 
 ---
 
-# 🛠️ Built With
+# Built With
 
 - Godot 4
 - GDScript
 
 ---
 
-# 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YourUsername/RustLine.git
-```
-
-Open the project using **Godot 4** and press **F5** to play.
-
+# Installation
+No Installtion Requirment go to : https://ahmedalaa999.itch.io/rustline
+and play that is all
 ---
 
-# 📅 Planned Features
-
-- More levels
-- Boss battles
-- Save system
-- Settings menu
-- New enemy types
-- More environments
-- Hidden collectibles
-- Better visual effects
-
----
-
-# 👨‍💻 Developer
+# Developer
 
 Created by **Ahmed Alaa**
 
-If you enjoy the game, don't forget to ⭐ star the repository!
 
----
-
-## License
-
-This project is for educational and portfolio purposes.
