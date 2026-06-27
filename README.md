@@ -10,7 +10,7 @@ A retro-inspired 2D pixel platformer where you explore the remains of a forgotte
 
 </div>
 
-# 🎮 How to Play
+# How to Play
 
 Your objective is simple:
 
@@ -25,7 +25,7 @@ Every level becomes more difficult, requiring quicker decisions and better movem
 
 ---
 
-# 🎮 Controls
+# Controls
 
 | Key | Action |
 |------|--------|
@@ -37,7 +37,7 @@ Every level becomes more difficult, requiring quicker decisions and better movem
 
 ---
 
-# ✨ Features
+# Features
 
 - Pixel-art graphics
 - beautiful  sound effects and background music
@@ -61,16 +61,9 @@ Every level becomes more difficult, requiring quicker decisions and better movem
 
 # 🖼️ Screenshots
 
-> Add gameplay screenshots here.
-
-Example:
-
-```
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/91cb2d87-d1b7-499d-8c44-8034c3be4c33" />
 <img width="1366" height="768" alt="{61086094-0EF9-4F1A-A301-5090C5C2A414}" src="https://github.com/user-attachments/assets/0dd90c9e-2706-4b91-bc76-26f776f7e792" />
 <img width="1366" height="768" alt="{C7852AF7-5CFB-423B-A768-25B7274E3D8D}" src="https://github.com/user-attachments/assets/118e4355-3364-4789-862f-259fc7a41a56" />
-
-```
 
 ---
 
