@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjtqdf18tuhf8"
+path="res://.godot/imported/freesound_community-into-nothing-40172 (1).mp3-d8bf3ebe55aacc5f519f0801da003b70.mp3str"
+
+[deps]
+
+source_file="res://freesound_community-into-nothing-40172 (1).mp3"
+dest_files=["res://.godot/imported/freesound_community-into-nothing-40172 (1).mp3-d8bf3ebe55aacc5f519f0801da003b70.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
