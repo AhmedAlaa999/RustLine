@@ -75,9 +75,9 @@ Every level becomes more difficult, requiring quicker decisions and better movem
 ---
 
 # Installation
---
-No Installtion Requirment go to : https://ahmedalaa999.itch.io/rustline
-and play that is all
+
+- No Installtion Requirment go to : https://ahmedalaa999.itch.io/rustline
+- Enjoy and play that is all
 ---
 
 # Developer
