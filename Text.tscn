@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://d2o5kjo2mf5il"]
+
+[ext_resource type="FontFile" uid="uid://tpkre3bb85j8" path="res://Tiles/Assets/Minecraft.ttf" id="1_hax2p"]
+[ext_resource type="Script" uid="uid://dmue80nd1qiuc" path="res://label.gd" id="1_ik6dx"]
+
+[node name="Label" type="Label" unique_id=86987838]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_hax2p")
+theme_override_font_sizes/font_size = 16
+script = ExtResource("1_ik6dx")

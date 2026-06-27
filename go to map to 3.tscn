@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://8juspu5y2l3w"]
+
+[ext_resource type="Script" uid="uid://broyfn31025ee" path="res://go_to_map_to_3.gd" id="1_8crf4"]
+[ext_resource type="Script" uid="uid://dpv07dc1aqcir" path="res://CanvasLayer.gd" id="2_hovka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8m6nr"]
+size = Vector2(10, 53)
+
+[node name="Area2D" type="Area2D" unique_id=565850029]
+script = ExtResource("1_8crf4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=283900063]
+position = Vector2(35, -7.5)
+shape = SubResource("RectangleShape2D_8m6nr")
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=978753432]
+script = ExtResource("2_hovka")
+
+[node name="ColorRect" type="ColorRect" parent="FadeLayer" unique_id=704849845]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

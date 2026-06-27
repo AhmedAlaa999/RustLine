@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bld48f6foy5xa"]
+
+[ext_resource type="Script" uid="uid://dpyx45gkd3q43" path="res://grass.gd" id="1_mw2ei"]
+[ext_resource type="Texture2D" uid="uid://cderbym7j2syo" path="res://Tiles/Assets/grass.png" id="2_2qnaq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmnf0"]
+size = Vector2(16, 11)
+
+[node name="Grass" type="Area2D" unique_id=1992362859]
+script = ExtResource("1_mw2ei")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1478311561]
+texture = ExtResource("2_2qnaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=344511023]
+position = Vector2(0, 10.5)
+shape = SubResource("RectangleShape2D_pmnf0")

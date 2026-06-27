@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://b3d7agd3boa3q"]
+
+[ext_resource type="Script" uid="uid://bgy3ls7xwbv21" path="res://win_screen.gd" id="1_cx6km"]
+[ext_resource type="FontFile" uid="uid://tpkre3bb85j8" path="res://Tiles/Assets/Minecraft.ttf" id="2_6l1fx"]
+[ext_resource type="AudioStream" uid="uid://lapvwtatwfxj" path="res://Trap/scratchonix-victory-chime-366449.mp3" id="3_ddy7k"]
+[ext_resource type="Script" uid="uid://dmb2ov7c0eqp2" path="res://label_2.gd" id="4_6l1fx"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=465301725]
+script = ExtResource("1_cx6km")
+
+[node name="Label" type="Label" parent="." unique_id=943304707]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -29.0
+offset_right = 215.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_6l1fx")
+theme_override_font_sizes/font_size = 57
+text = "You Win Buddy !!"
+
+[node name="VictorySound" type="AudioStreamPlayer2D" parent="." unique_id=1449714031]
+stream = ExtResource("3_ddy7k")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1295428038]
+modulate = Color(0, 0, 0, 0.2784314)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label2" type="Label" parent="." unique_id=620795654]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = 48.0
+offset_right = 85.5
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_6l1fx")
+theme_override_font_sizes/font_size = 44
+text = "Press R"
+script = ExtResource("4_6l1fx")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dcoev1w2v81p2"]
+
+[ext_resource type="FontFile" uid="uid://tpkre3bb85j8" path="res://Tiles/Assets/Minecraft.ttf" id="1_l7nf1"]
+
+[node name="Control" type="Control" unique_id=441447830]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CoinCounter" type="Label" parent="." unique_id=1812588021 groups=["coin_counter"]]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_l7nf1")
+text = "0"

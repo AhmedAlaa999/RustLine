@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://h70cjqrab5je"]
+
+[ext_resource type="FontFile" uid="uid://tpkre3bb85j8" path="res://Tiles/Assets/Minecraft.ttf" id="1_5l3nl"]
+
+[sub_resource type="GDScript" id="GDScript_f2cwa"]
+script/source = "extends Button
+
+func _ready():
+	print(\"GameManager.fullscreen =\", GameManager.fullscreen)
+	print(\"Window mode =\", DisplayServer.window_get_mode())
+	update_text()
+
+func _pressed():
+	GameManager.fullscreen = !GameManager.fullscreen
+	print(\"Button pressed! fullscreen =\", GameManager.fullscreen)
+
+	if GameManager.fullscreen:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+
+	update_text()
+
+func update_text():
+	text = \"Fullscreen: \" + (\"ON\" if GameManager.fullscreen else \"OFF\")
+"
+
+[node name="FullscreenButton" type="Button" unique_id=1388859131]
+offset_left = 27.0
+offset_top = 13.0
+offset_right = 284.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("1_5l3nl")
+theme_override_font_sizes/font_size = 33
+text = "Fullscreen: OFF"
+script = SubResource("GDScript_f2cwa")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

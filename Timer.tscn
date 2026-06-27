@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b1x5rpqc7jebq"]
+
+[ext_resource type="Script" uid="uid://dtejmy7k802tp" path="res://timer.gd" id="1_2p01c"]
+[ext_resource type="Script" uid="uid://ckdpau1yci70x" path="res://timer_label.gd" id="1_7jo7d"]
+[ext_resource type="FontFile" uid="uid://tpkre3bb85j8" path="res://Tiles/Assets/Minecraft.ttf" id="2_kkeil"]
+
+[node name="Timer" type="CanvasLayer" unique_id=54667492]
+script = ExtResource("1_2p01c")
+
+[node name="TimerLabel" type="Label" parent="." unique_id=553140460]
+offset_left = 1108.0
+offset_top = 71.0
+offset_right = 1229.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_fonts/font = ExtResource("2_kkeil")
+theme_override_font_sizes/font_size = 23
+text = "Timer : 60 "
+script = ExtResource("1_7jo7d")
+
+[node name="GameTimer" type="Timer" parent="." unique_id=1616376020]
+wait_time = 60.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]

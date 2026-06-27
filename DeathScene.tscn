@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d2auuup45scf6"]
+
+[ext_resource type="Script" uid="uid://c5d855kkptt2x" path="res://DeathScreen.gd" id="1_x3knq"]
+[ext_resource type="FontFile" uid="uid://tpkre3bb85j8" path="res://Tiles/Assets/Minecraft.ttf" id="2_6brm5"]
+[ext_resource type="AudioStream" uid="uid://b71sueugcwwi1" path="res://freesound_community-game-over-38511.mp3" id="3_4ski7"]
+[ext_resource type="Script" uid="uid://dmb2ov7c0eqp2" path="res://label_2.gd" id="4_5rtml"]
+
+[node name="DeathScreen" type="CanvasLayer" unique_id=1485910825]
+script = ExtResource("1_x3knq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1464309140]
+modulate = Color(0, 0, 0, 0.34509805)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=675392134]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.5
+offset_top = -60.0
+offset_right = 202.5
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9411765, 0.050980393, 0, 1)
+theme_override_fonts/font = ExtResource("2_6brm5")
+theme_override_font_sizes/font_size = 120
+text = "DEATH"
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=1130025290]
+stream = ExtResource("3_4ski7")
+
+[node name="Label2" type="Label" parent="." unique_id=1250159944]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = 48.0
+offset_right = 85.5
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_6brm5")
+theme_override_font_sizes/font_size = 44
+text = "Press R"
+script = ExtResource("4_5rtml")

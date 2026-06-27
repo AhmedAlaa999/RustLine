@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bsdtohnip2ieu"]
+
+[ext_resource type="Script" uid="uid://blux670uew8vu" path="res://suriken.gd" id="1_csovb"]
+[ext_resource type="Texture2D" uid="uid://c2y3hnmmrkuxx" path="res://Suriken.png" id="1_v7gj7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csovb"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkib6"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6mru"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2nhj"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahbpq"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3rcj"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ow3c"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfebd"]
+atlas = ExtResource("1_v7gj7")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kmooa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csovb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkib6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6mru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2nhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahbpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3rcj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ow3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfebd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 21.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g1o70"]
+radius = 16.03122
+
+[node name="Area2D" type="Area2D" unique_id=5593207]
+script = ExtResource("1_csovb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1476717295]
+sprite_frames = SubResource("SpriteFrames_kmooa")
+autoplay = "default"
+frame_progress = 0.97748345
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1990037564]
+shape = SubResource("CircleShape2D_g1o70")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
