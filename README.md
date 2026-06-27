@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🟫 RustLine
+# RustLine
 
 *"Every second matters. Every coin counts."*
 
